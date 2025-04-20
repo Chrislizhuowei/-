@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>3D音乐粒子效果</title>
+    <style>
+        body { margin: 0; }
+        canvas { display: block; }
+        #fileInput {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 100;
+        }
+        #instructions {
+            position: absolute;
+            top: 60px;
+            left: 20px;
+            color: white;
+            font-family: Arial, sans-serif;
+            background: rgba(0,0,0,0.5);
+            padding: 10px;
+            border-radius: 5px;
+            z-index: 100;
+        }
+    </style>
+</head>
+<body>
+    <input type="file" id="fileInput" accept="audio/*">
+    <div id="instructions">
+        请选择一个音频文件来开始播放<br>
+        支持的格式: MP3, WAV, OGG
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html> 
